@@ -344,8 +344,8 @@ function verifyTransfer(uidOne, uidTwo, amount, inquiryID, cb) {
                             if (snapshot.val() == null) {
                                 console.log("something serious just went wrong."); 
                             } else {
-                                let coins = parseInt(snapshot.val()["coins"]);
-                                let newCoinsAmount = coins - parseInt(amount);
+                                var coins = parseInt(snapshot.val()["coins"]);
+                                var newCoinsAmount = coins - parseInt(amount);
                                 uidOneRef.update({coins: newCoinsAmount}); 
                                 
                                 var uidTwoRef = db.ref('/coins/' + uidTwo);
@@ -353,8 +353,8 @@ function verifyTransfer(uidOne, uidTwo, amount, inquiryID, cb) {
                                    if (snapshot.val() == null) {
                                        console.log("something serious just went wrong."); 
                                    }  else {
-                                       let coinsTwo = parseInt(snapshot.val()["coins"]); 
-                                       let newCoinsAmountTwo = coinsTwo + parseInt(amount);  
+                                       var coinsTwo = parseInt(snapshot.val()["coins"]); 
+                                       var newCoinsAmountTwo = coinsTwo + parseInt(amount);  
                                        uidTwoRef.update({coins: newCoinsAmountTwo});
                                    }
                                 });
