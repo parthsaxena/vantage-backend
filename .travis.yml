@@ -4,6 +4,5 @@ node_js:
 before_script:
  - npm install
 script:
-  - sudo $(which node) server.js
   - npm test
 sudo: required

@@ -1,10 +1,10 @@
 {
   "name": "vantage-coin",
   "version": "0.0.0",
-  "description": "Vantage Coin System backend.",
+  "description": "Vantage Backend",
   "main": "server.js",
   "scripts": {
-    "test": "sudo $(which node) server.js"
+    "test": "sudo $(which node) server.js &"
   },
   "author": "Socify LLC",
   "license": "BSD-2-Clause",
