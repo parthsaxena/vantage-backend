@@ -4,7 +4,7 @@
   "description": "Vantage Coin System backend.",
   "main": "server.js",
   "scripts": {
-    "test": "sudo node server.js"
+    "test": "sudo $(which node) server.js"
   },
   "author": "Socify LLC",
   "license": "BSD-2-Clause",
