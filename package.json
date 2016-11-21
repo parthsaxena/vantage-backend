@@ -1,0 +1,15 @@
+{
+  "name": "vantage-coin",
+  "version": "0.0.0",
+  "description": "Vantage Coin System backend.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Socify LLC",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "firebase": "~3.4.1",
+    "letsencrypt-express": "~2.0.3"
+  }
+}

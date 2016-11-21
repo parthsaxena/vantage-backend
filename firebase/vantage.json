@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "vantage-e9003",
+  "private_key_id": "fa96a3a563e997c4737857c8c0fefd6a859ea5e2",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC0TpwJ6MBKVN3S\n2UFv5HW8HGXZz06lgE145bs+6hNitdW8c+UgNx01dSEnSWvsD1hIxGRHNTNU5NQX\nOvYzapHNTZAJHyLzmbwpSHU1qptjSdRwylvScnVQy+LqwM4ppEWC4fl5dvh3RdbW\nVkv8H2NMA+4OjtoIGjEq6HDi2XAGNmCsOFGCPYSQ1cPcLnCM270+jroyaz7hyCe3\nxx8mAG2x3B8qDjbHA94bmUwe5fgBQjGsuUWNiBOuOyQyI92dxxz8jwbrtA64w9Cs\nmKwlC2Kj6THJiQ3R3VDNjhCxI8iw4AVDXUxMQ1CXeEM58MffZ+M6DFmZZminX5tg\nfK0zFFQzAgMBAAECggEABNCMjh8u800s1zKB8tDw6+L+PUCx4u14JCBOTbHGbr5Y\nRL37gk62cvT7u6bUQOtv+hF0dApRopSxrSUf6eOQnSDTFctFDagvRBLxPkud9prE\nF3bv2MDBrTSkjIw1dRsz1/jcxoeMvvKYeAS55rOX3THFq5HY9JpucazfRs9zlFbX\n451v4U9jfAumSlZxHIMV9sKlH2U5biHl0AH7eYuxy4s0+pF1t+VyFnyEzJo6gk/R\n5mx/DKMWr400Or7EgOEnsmQxswQBnwXfIhmDT6hk3gY5rnGbGSje8skR4Ag986iK\nqZYKBbedTpwmE/laAr/rjCuNSKPrrGemSpkOBIlEQQKBgQDj0TYnP73ou1qs9EJd\nlu4hvHRaztEmZXtV1lHbdgXsnrBbLNmo00NMeBd3wy/7N1+/mP6h3M+RRDZUtssV\nRenqmsjF3JM95hx0B0nU8texYhf5JLaUVWt19s5safsvrTN77GtjQrZnr6emmWZ7\nbGJiSsLOuW7CGHGpMQRjG3TFowKBgQDKnMoQsl4jq3opoeP2cRJm3iyHdydJcGco\nycovkawxBZDrOf741b1aWkaKwkDL2aKiUNGJfFSMj3vrSJYKOTGqZw6BilgEwADd\nrIcZuyshixfGJokbKod9RCrrNiwcZLxJ1TuyEcuprWFVg6i6cPvOKQ46+YmZDWtb\neZYKqgOAMQKBgHCdHnPQYoQE+RG9vICe9x/eFHY+/cxJJeqMgvJFKTCKUQsA5Kc7\np2zJgHBHIBTCjqYbbuN8T26zlVfS9BiT8slxsgV8v5w9f5srbyfA0zZwEwGpUEeK\n4g/x7KBS00QCDg0YFQ2AEMK4ZdtIwQwJy6hi5GFj8IgppSXJgS2siNCZAoGADvj1\nKbS0pjgmx+rRuMV0Uau7aKtSeOfYh7gZu9gs/FZn9ioMAIFzA7lGGzztouLLVOla\nAqnwaY603pc3lzvQwsHo3YPGq1sw9TCpryoYrtrjf94bJanH52bhMQ6IxfRfwakD\nR05vWXOZjMM09cohoYOBLLSCCZBnTZQ3lUQpDBECgYEAnhRCncgKDsU5cxyMpfmk\n8iCYB9N8BOfK0M1RPXSIsFOE07X/2/9Vv+QvM5dqM03g0c2+iMo+dUe5gVBBE0EZ\nkKwLwIg40/DIqd/6rg+S7+VKneGIeTBjs5gwgJSxX31yzxl6NySJtXukfezzUWgX\ne/xolaNM30O5jwdv6r/Hifk=\n-----END PRIVATE KEY-----\n",
+  "client_email": "vantage-aws@vantage-e9003.iam.gserviceaccount.com",
+  "client_id": "108190481601866003986",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/vantage-aws%40vantage-e9003.iam.gserviceaccount.com"
+}
