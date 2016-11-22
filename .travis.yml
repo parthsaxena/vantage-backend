@@ -12,3 +12,4 @@ deploy:
  app: vantage-backend-staging
  api_key: "a554c7f3-d5b7-43a8-ba7d-14997cf716f1"
  branch: staging
+tags: true
