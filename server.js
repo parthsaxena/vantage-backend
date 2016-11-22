@@ -38,7 +38,7 @@ var db = firebase.database();
 
 var app = require('express')();
 
-require('http').createServer(app).listen(80, function() {
+require('http').createServer(app).listen(process.env.PORT || 80, function() {
   console.log("vantage-backend server started.")
 })
 
