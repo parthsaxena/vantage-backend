@@ -42,7 +42,7 @@ require('http').createServer(app).listen(process.env.PORT || 80, function() {
   console.log("vantage-backend server started.")
 })
 
-require('https').createServer(lex.httpsOptions, lex.middleware(app)).listen(443, function () {
+require('https').createServer(lex.httpsOptions, lex.middleware(app)).listen(process.env.PORT || 443, function () {
   console.log("Listening for ACME tls-sni-01 challenges and serve app on", this.address());
 });
 
