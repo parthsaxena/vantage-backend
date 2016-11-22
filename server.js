@@ -9,6 +9,7 @@ var nodemailer = require('nodemailer');
 var PORT = 80;
 var LOG_FILE = './logs/main.log';
 
+//
 // LOG VALUES
 // [0] = Server Started
 // [1] = Transfer of coins has been requested
