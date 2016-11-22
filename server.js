@@ -26,7 +26,7 @@ firebase.initializeApp({
 });
 var db = firebase.database();
 
-var lex = require('letsencrypt-express').create({
+/*var lex = require('letsencrypt-express').create({
   server: 'staging'
 , key: fs.readFileSync("/etc/letsencrypt/archive/secure.vantage.social/privkey1.pem")
 , cert: fs.readFileSync("/etc/letsencrypt/archive/secure.vantage.social/fullchain1.pem")
@@ -34,17 +34,17 @@ var lex = require('letsencrypt-express').create({
 , challenges: { 'http-01': require('le-challenge-fs').create({ webrootPath: '/tmp/acme-challenges' }) }
 , store: require('le-store-certbot').create({ webrootPath: '/tmp/acme-challenges' })
 , approveDomains: approveDomains
-});
+});*/
 
 var app = require('express')();
 
-require('http').createServer(lex.middleware(require('redirect-https')())).listen(80, function () {
-  console.log("Listening for ACME http-01 challenges on", this.address());
-});
+require('http').createServer(app).listen(80, function() {
+  console.log("vantage-backend server started.")
+})
 
-require('https').createServer(lex.httpsOptions, lex.middleware(app)).listen(443, function () {
+/*require('https').createServer(lex.httpsOptions, lex.middleware(app)).listen(443, function () {
   console.log("Listening for ACME tls-sni-01 challenges and serve app on", this.address());
-});
+});*/
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
