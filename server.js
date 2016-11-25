@@ -223,7 +223,7 @@ app.post('/request_five_coins.php', function(request, response) {
 			console.log("timestamps are the same");
 			var coinRef = db.ref("/coins/" + uid);
 			coinRef.once("value", function(snapshot) {
-				var coins = snapshot.val()["coins"];
+				var coins = parseInt(snapshot.val()["coins"]);
 				var timestamp = snapshot.val()["videoAdUnixEpochTime"]
 				var obj = {};
 				obj["coins"] = coins + 5;
