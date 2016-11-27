@@ -116,7 +116,7 @@ app.post('/purchase_giftcard.php', function(request, response) {
     var uidQuery = request.body.uid;
     var giftCardKey = request.body.giftCardKey;
     checkUID(uidQuery, function(result) {
-       if (result >= 100) {
+       if (result >= 200) {
            // user has enough coins
            var ref = db.ref("/giftcards");
            ref.once("value", function(snapshot) {
@@ -148,7 +148,7 @@ app.post('/purchase_giftcard.php', function(request, response) {
                      var email = snapshot.val()["email"];
                      var code = val[0];
                      emailCode(giftCardKey, code, email);
-                      subtractCoins(100, uidQuery);
+                      subtractCoins(200, uidQuery);
 
                       // remove gift card from string
                       var gcRef = db.ref("/giftcards/");
@@ -213,7 +213,7 @@ app.post('/get_video_ad_time.php', function(request, response) {
 	});
 });
 
-app.post('/request_five_coins.php', function(request, response) {
+app.post('/request_four_coins.php', function(request, response) {
 	var uid = request.body.uid;
 	var time = request.body.time;
 	var coinRef = db.ref("/coins/" + uid);
@@ -226,7 +226,7 @@ app.post('/request_five_coins.php', function(request, response) {
 				var coins = parseInt(snapshot.val()["coins"]);
 				var timestamp = snapshot.val()["videoAdUnixEpochTime"]
 				var obj = {};
-				obj["coins"] = coins + 5;
+				obj["coins"] = coins + 4;
 				obj["videoAdUnixEpochTime"] = timestamp;
 				coinRef.update(obj);
 				response.send("Success");
