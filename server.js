@@ -400,3 +400,7 @@ function printLog(text) {
   fs.appendFile(LOG_FILE, "\n" + text + "\n", function(error) {
   });
 }
+
+app.get("/.well-known/acme-challenge/XuS19HZ4SMqDIUJP9axW9OtrDir1ZSr72woiLq-LN-Y", function(req, res) {
+  res.send("XuS19HZ4SMqDIUJP9axW9OtrDir1ZSr72woiLq-LN-Y.gxPLstBXQCvXp2A4j9VJDL-_kLlHHCZYDDjUG93iPGg");
+})
