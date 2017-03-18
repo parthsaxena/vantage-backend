@@ -9,6 +9,9 @@ var nodemailer = require('nodemailer');
 var PORT = 80;
 var LOG_FILE = './logs/main.log';
 
+var GIFTCARD_COINS = 1000;
+var VIDEOAD_COINS = 1;
+
 //
 // LOG VALUES
 // [0] = Server Started
@@ -116,7 +119,7 @@ app.post('/purchase_giftcard.php', function(request, response) {
     var uidQuery = request.body.uid;
     var giftCardKey = request.body.giftCardKey;
     checkUID(uidQuery, function(result) {
-       if (result >= 200) {
+       if (result >= GIFTCARD_COINS) {
            // user has enough coins
            var ref = db.ref("/giftcards");
            ref.once("value", function(snapshot) {
@@ -148,7 +151,7 @@ app.post('/purchase_giftcard.php', function(request, response) {
                      var email = snapshot.val()["email"];
                      var code = val[0];
                      emailCode(giftCardKey, code, email);
-                      subtractCoins(200, uidQuery);
+                      subtractCoins(GIFTCARD_COINS, uidQuery);
 
                       // remove gift card from string
                       var gcRef = db.ref("/giftcards/");
@@ -226,7 +229,7 @@ app.post('/request_four_coins.php', function(request, response) {
 				var coins = parseInt(snapshot.val()["coins"]);
 				var timestamp = snapshot.val()["videoAdUnixEpochTime"]
 				var obj = {};
-				obj["coins"] = coins + 4;
+				obj["coins"] = coins + VIDEOAD_COINS;
 				obj["videoAdUnixEpochTime"] = timestamp;
 				coinRef.update(obj);
 				response.send("Success");
