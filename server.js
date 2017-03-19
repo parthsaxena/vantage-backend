@@ -11,6 +11,7 @@ var LOG_FILE = './logs/main.log';
 
 var GIFTCARD_COINS = 1000;
 var VIDEOAD_COINS = 1;
+var NEWUSER_COINS = 100;
 
 //
 // LOG VALUES
@@ -295,7 +296,7 @@ function checkUID(uid, cb) {
           cb("10");
           var coinRef = db.ref("coins").child(uid);
           coinRef.set({
-            coins: "10"
+            coins: NEWUSER_COINS
           });
         }
       });
