@@ -293,7 +293,8 @@ function checkUID(uid, cb) {
           // user is legit but is not in the coins database yet
           //response.setHeader(200, {"Content-Type": "application/json"});
           //response.write("creating user in coins database.");
-          cb("10");
+          var coinsString = NEWUSER_COINS.toString();
+          cb(coinsString);
           var coinRef = db.ref("coins").child(uid);
           coinRef.set({
             coins: NEWUSER_COINS
